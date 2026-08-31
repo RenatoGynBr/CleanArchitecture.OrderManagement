@@ -1,0 +1,127 @@
+﻿Restoring packages for D:\DotNet\CleanArchitecture.OrderManagement\CleanArchitecture.OrderManagement.Infrastructure\CleanArchitecture.OrderManagement.Infrastructure.csproj...
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.identity/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.identity/index.json 213ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.identity/2.3.12/microsoft.aspnetcore.identity.2.3.12.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.identity/2.3.12/microsoft.aspnetcore.identity.2.3.12.nupkg 111ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.cookies/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.identity.core/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.hosting.abstractions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/system.security.cryptography.xml/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.cookies/index.json 74ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.cookies/2.3.11/microsoft.aspnetcore.authentication.cookies.2.3.11.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.identity.core/index.json 86ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.hosting.abstractions/index.json 94ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.extensions.identity.core/2.3.11/microsoft.extensions.identity.core.2.3.11.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.hosting.abstractions/2.3.11/microsoft.aspnetcore.hosting.abstractions.2.3.11.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/system.security.cryptography.xml/index.json 164ms
+  GET https://api.nuget.org/v3-flatcontainer/system.security.cryptography.xml/8.0.4/system.security.cryptography.xml.8.0.4.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.cookies/2.3.11/microsoft.aspnetcore.authentication.cookies.2.3.11.nupkg 124ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.extensions.identity.core/2.3.11/microsoft.extensions.identity.core.2.3.11.nupkg 112ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.hosting.abstractions/2.3.11/microsoft.aspnetcore.hosting.abstractions.2.3.11.nupkg 118ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.hosting.server.abstractions/index.json
+  OK https://api.nuget.org/v3-flatcontainer/system.security.cryptography.xml/8.0.4/system.security.cryptography.xml.8.0.4.nupkg 100ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.abstractions/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication/index.json 78ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication/2.3.10/microsoft.aspnetcore.authentication.2.3.10.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.hosting.server.abstractions/index.json 84ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.hosting.server.abstractions/2.3.10/microsoft.aspnetcore.hosting.server.abstractions.2.3.10.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.abstractions/index.json 82ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication/2.3.10/microsoft.aspnetcore.authentication.2.3.10.nupkg 96ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.hosting.server.abstractions/2.3.10/microsoft.aspnetcore.hosting.server.abstractions.2.3.10.nupkg 112ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.abstractions/2.3.10/microsoft.aspnetcore.http.abstractions.2.3.10.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.core/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.dataprotection/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.extensions/index.json
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.features/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.core/index.json 65ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.dataprotection/index.json 66ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.core/2.3.9/microsoft.aspnetcore.authentication.core.2.3.9.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.dataprotection/2.3.9/microsoft.aspnetcore.dataprotection.2.3.9.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.features/index.json 76ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http/index.json 80ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.extensions/index.json 81ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.features/2.3.9/microsoft.aspnetcore.http.features.2.3.9.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http/2.3.9/microsoft.aspnetcore.http.2.3.9.nupkg
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.extensions/2.3.9/microsoft.aspnetcore.http.extensions.2.3.9.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.abstractions/2.3.10/microsoft.aspnetcore.http.abstractions.2.3.10.nupkg 130ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.authentication.core/2.3.9/microsoft.aspnetcore.authentication.core.2.3.9.nupkg 92ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.extensions/2.3.9/microsoft.aspnetcore.http.extensions.2.3.9.nupkg 87ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.dataprotection/2.3.9/microsoft.aspnetcore.dataprotection.2.3.9.nupkg 113ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http.features/2.3.9/microsoft.aspnetcore.http.features.2.3.9.nupkg 95ms
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.aspnetcore.http/2.3.9/microsoft.aspnetcore.http.2.3.9.nupkg 149ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.net.http.headers/index.json
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.net.http.headers/index.json 103ms
+  GET https://api.nuget.org/v3-flatcontainer/microsoft.net.http.headers/2.3.8/microsoft.net.http.headers.2.3.8.nupkg
+  OK https://api.nuget.org/v3-flatcontainer/microsoft.net.http.headers/2.3.8/microsoft.net.http.headers.2.3.8.nupkg 110ms
+Installed Microsoft.AspNetCore.Identity 2.3.12 from https://api.nuget.org/v3/index.json to C:\Users\User\.nuget\packages\microsoft.aspnetcore.identity\2.3.12 with content hash W8ZgMRQ/5l1heUydC0bCpk2XurKeW+R3uKWol1cL3qKT2epPEH6SlGjuKgrAbpBSdwEJH7ZTQ1M4F0AZqM1rOg==.
+Installed Microsoft.AspNetCore.Http.Abstractions 2.3.10 from https://api.nuget.org/v3/index.json to C:\Users\User\.nuget\packages\microsoft.aspnetcore.http.abstractions\2.3.10 with content hash FD6mE5v3qB/sEcnLNni1oHsATuLHIFzsKHCulUZS7iaJez8+TkD432L89DQtU9PfjCkaPO0JOQjB4tS4L8oZXQ==.
+Installed Microsoft.AspNetCore.Authentication.Cookies 2.3.11 from https://api.nuget.org/v3/index.json to C:\Users\User\.nuget\packages\microsoft.aspnetcore.authentication.cookies\2.3.11 with content hash EDkglBhZoP7BZZBk9JIVocautOyvL1ZaRECXLwJkDiveWxAOk8C5/UvVlLmEnWLBhpIoNbrtbSmIMDAbcmt9jw==.
+Installed Microsoft.AspNetCore.Hosting.Abstractions 2.3.11 from https://api.nuget.org/v3/index.json to C:\Users\User\.nuget\packages\microsoft.aspnetcore.hosting.abstractions\2.3.11 with content hash 4WGroJ1mZ+xzn0fmBvrR5HPi4KV+LStuc7tpm2i15OF3ALvwdeAZxVhMM0xbEHhnQLZzuA6nV2rEGlgB79qErg==.
+Installed Microsoft.AspNetCore.DataProtection 2.3.9 from https://api.nuget.org/v3/index.json to C:\Users\User\.nuget\packages\microsoft.aspnetcore.dataprotection\2.3.9 with content hash 38A+sWmUo/0UF5bGjkTN+/Y0AVyDxKYCkNanuQkcJoKhGG+GMzdiBClYa04GePvHLWSOBXbvVcpvULIEDnc1uA==.
+Installed Microsoft.AspNetCore.Http.Features 2.3.9 from https://api.nuget.org/v3/index.json to C:\Users\User\.nuget\packages\microsoft.aspnetcore.http.features\2.3.9 with content hash nDWDF0YBgElg6f0omqJ8DupmITQg5p4lklBxFpVR83tQQhOG2tw9Fa5ul8b+KywsYBsyfn9DschUmfzOV6RvGw==.
+Installed Microsoft.AspNetCore.Authentication.Core 2.3.9 from https://api.nuget.org/v3/index.json to C:\Users\User\.nuget\packages\microsoft.aspnetcore.authentication.core\2.3.9 with content hash q31DFw3Se4Z1Cef/Y+XGmsEwjeecZT/k1i+OzPc7sMFmFFEWwn+1KaAntqLbEeUmRnTBCXDP7RpiQnWMif4KNw==.
+Installed Microsoft.AspNetCore.Http.Extensions 2.3.9 from https://api.nuget.org/v3/index.json to C:\Users\User\.nuget\packages\microsoft.aspnetcore.http.extensions\2.3.9 with content hash SGsOQz6v1GoE3Wa4vUPs855nvcG75JfQrwcUd/siR5eci8vmWz62V0a4KqMW3ZV65zUMdQOqbT7JvmTdqh0Fxw==.
+Installed Microsoft.AspNetCore.Hosting.Server.Abstractions 2.3.10 from https://api.nuget.org/v3/index.json to C:\Users\User\.nuget\packages\microsoft.aspnetcore.hosting.server.abstractions\2.3.10 with content hash 0XFKPFIX353uJBeumM9+E+z11RGlImpvTosKGaK7AZWRB/QWUfjN5AvQbsWIQQ6N5SKBvv1ehfU6Tye/+dRebQ==.
+Installed Microsoft.Net.Http.Headers 2.3.8 from https://api.nuget.org/v3/index.json to C:\Users\User\.nuget\packages\microsoft.net.http.headers\2.3.8 with content hash JO60u/VVUdaZfv4XQ//zgcH54y8rnxdpcvXnsDqWLKB4adDKaCiaozixDfQ/6H+PKYfkNV2CL8b8U+F9mciE3Q==.
+Installed Microsoft.AspNetCore.Authentication 2.3.10 from https://api.nuget.org/v3/index.json to C:\Users\User\.nuget\packages\microsoft.aspnetcore.authentication\2.3.10 with content hash sZZ4NKXcIT8g7EMk2JVL2DWPdIuGMqiQtW0eblhhWv6ctyt5LsG2hqgS1w1o5OokWHcgkcIwCbBJ95BPKbfyKg==.
+Installed Microsoft.AspNetCore.Http 2.3.9 from https://api.nuget.org/v3/index.json to C:\Users\User\.nuget\packages\microsoft.aspnetcore.http\2.3.9 with content hash +CcfWi1LoKYbcxt+3toO4xbBG+qSSMbPuuow+cbZKIrITXuu1geN1traamL4jG8QaHdHGm3M0eCh+EOgdMgNPA==.
+Installed Microsoft.Extensions.Identity.Core 2.3.11 from https://api.nuget.org/v3/index.json to C:\Users\User\.nuget\packages\microsoft.extensions.identity.core\2.3.11 with content hash zaqJPoJMdCJsat5iisYbUu3aKi1Jk5y7Ioa+3A8GaDdWEu7SEfPaPxHENfe3tKm8Sav3K2FTeSAIQUmDW4lErA==.
+Installed System.Security.Cryptography.Xml 8.0.4 from https://api.nuget.org/v3/index.json to C:\Users\User\.nuget\packages\system.security.cryptography.xml\8.0.4 with content hash 1y+ROEEmEOACrQWqRi37GkGHOThPc31m7vezOySpPE9xXN2nTN6ndLYjylvy42aCtQq4owlYhcqaKpQKMDFKFg==.
+  CACHE https://api.nuget.org/v3/vulnerabilities/index.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2026.08.20.05.43.44/vulnerability.base.json
+  CACHE https://api.nuget.org/v3-vulnerabilities/2026.08.20.05.43.44/2026.08.24.05.44.07/vulnerability.update.json
+Installing NuGet package Microsoft.AspNetCore.Identity 2.3.12.
+Writing assets file to disk. Path: D:\DotNet\CleanArchitecture.OrderManagement\CleanArchitecture.OrderManagement.Infrastructure\obj\project.assets.json
+Successfully installed 'Microsoft.AspNetCore.Authentication 2.3.10' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.AspNetCore.Authentication.Abstractions 2.3.0' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.AspNetCore.Authentication.Cookies 2.3.11' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.AspNetCore.Authentication.Core 2.3.9' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.AspNetCore.Cryptography.Internal 2.3.0' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.AspNetCore.Cryptography.KeyDerivation 2.3.0' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.AspNetCore.DataProtection 2.3.9' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.AspNetCore.DataProtection.Abstractions 2.3.0' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.AspNetCore.Hosting.Abstractions 2.3.11' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.AspNetCore.Hosting.Server.Abstractions 2.3.10' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.AspNetCore.Http 2.3.9' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.AspNetCore.Http.Abstractions 2.3.10' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.AspNetCore.Http.Extensions 2.3.9' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.AspNetCore.Http.Features 2.3.9' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.AspNetCore.Identity 2.3.12' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.AspNetCore.WebUtilities 2.3.0' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.Extensions.Diagnostics.Abstractions 8.0.1' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.Extensions.FileProviders.Abstractions 8.0.0' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.Extensions.Hosting.Abstractions 8.0.1' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.Extensions.Identity.Core 2.3.11' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.Extensions.ObjectPool 8.0.11' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.Extensions.WebEncoders 8.0.11' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'Microsoft.Net.Http.Headers 2.3.8' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'System.ComponentModel.Annotations 5.0.0' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'System.Security.Cryptography.Pkcs 8.0.1' to CleanArchitecture.OrderManagement.Infrastructure
+Successfully installed 'System.Security.Cryptography.Xml 8.0.4' to CleanArchitecture.OrderManagement.Infrastructure
+Assets file has not changed. Skipping assets file writing. Path: D:\DotNet\CleanArchitecture.OrderManagement\CleanArchitecture.OrderManagement.API\obj\project.assets.json
+Restored D:\DotNet\CleanArchitecture.OrderManagement\CleanArchitecture.OrderManagement.API\CleanArchitecture.OrderManagement.API.csproj (in 2 ms).
+Assets file has not changed. Skipping assets file writing. Path: D:\DotNet\CleanArchitecture.OrderManagement\CleanArchitecture.OrderManagement.Tests\obj\project.assets.json
+Restored D:\DotNet\CleanArchitecture.OrderManagement\CleanArchitecture.OrderManagement.Tests\CleanArchitecture.OrderManagement.Tests.csproj (in 3 ms).
+
+NuGet Config files used:
+    C:\Users\User\AppData\Roaming\NuGet\NuGet.Config
+    C:\Program Files (x86)\NuGet\Config\DevExpress 26.1.config
+    C:\Program Files (x86)\NuGet\Config\Microsoft.VisualStudio.FallbackLocation.config
+    C:\Program Files (x86)\NuGet\Config\Microsoft.VisualStudio.Offline.config
+
+Feeds used:
+    https://api.nuget.org/v3/index.json
+    C:\Program Files\DevExpress 26.1\Components\System\Components\Packages
+    C:\Program Files (x86)\Microsoft SDKs\NuGetPackages\
+Executing nuget actions took 40 ms
+Time Elapsed: 00:00:02.1461623
+========== Finished ==========
+
+Restored D:\DotNet\CleanArchitecture.OrderManagement\CleanArchitecture.OrderManagement.API\CleanArchitecture.OrderManagement.API.csproj (in 132 ms).
+Restored D:\DotNet\CleanArchitecture.OrderManagement\CleanArchitecture.OrderManagement.Tests\CleanArchitecture.OrderManagement.Tests.csproj (in 149 ms).
+Time Elapsed: 00:00:00.1580633
+========== Finished ==========
+
+

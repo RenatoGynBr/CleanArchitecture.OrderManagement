@@ -1,0 +1,6 @@
+@CleanArchitecture.OrderManagement.API_HostAddress = http://localhost:5108
+
+GET {{CleanArchitecture.OrderManagement.API_HostAddress}}/orders/
+Accept: application/json
+
+###

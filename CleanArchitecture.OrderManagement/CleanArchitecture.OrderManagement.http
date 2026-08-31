@@ -1,0 +1,6 @@
+@CleanArchitecture.OrderManagement_HostAddress = http://localhost:5093
+
+GET {{CleanArchitecture.OrderManagement_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

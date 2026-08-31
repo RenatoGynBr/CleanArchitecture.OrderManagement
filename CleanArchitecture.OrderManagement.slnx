@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="CleanArchitecture.OrderManagement.API/CleanArchitecture.OrderManagement.API.csproj" />
+  <Project Path="CleanArchitecture.OrderManagement.Application/CleanArchitecture.OrderManagement.Application.csproj" />
+  <Project Path="CleanArchitecture.OrderManagement.Domain/CleanArchitecture.OrderManagement.Domain.csproj" />
+  <Project Path="CleanArchitecture.OrderManagement.Infrastructure/CleanArchitecture.OrderManagement.Infrastructure.csproj" />
+  <Project Path="CleanArchitecture.OrderManagement.Tests/CleanArchitecture.OrderManagement.Tests.csproj" />
+</Solution>
