@@ -1,6 +1,5 @@
-﻿using MediatR;
-
-namespace CleanArchitecture.OrderManagement.Application.Orders.Commands.ConfirmOrder;
+﻿using CleanArchitecture.OrderManagement.Application.Common;
+using MediatR;
 
 public record ConfirmOrderCommand(Guid OrderId)
-    : IRequest<bool>;
+    : IRequest<Result>;

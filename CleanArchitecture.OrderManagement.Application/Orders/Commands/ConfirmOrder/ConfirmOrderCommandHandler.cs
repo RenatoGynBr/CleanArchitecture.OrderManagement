@@ -1,12 +1,10 @@
 ﻿using CleanArchitecture.OrderManagement.Application.Abstractions.Persistence;
+using CleanArchitecture.OrderManagement.Application.Common;
 using CleanArchitecture.OrderManagement.Domain.Enums;
 using MediatR;
-using System.Net.NetworkInformation;
-
-namespace CleanArchitecture.OrderManagement.Application.Orders.Commands.ConfirmOrder;
 
 public class ConfirmOrderCommandHandler
-    : IRequestHandler<ConfirmOrderCommand, bool>
+    : IRequestHandler<ConfirmOrderCommand, Result>
 {
     private readonly IOrderRepository _repository;
 
@@ -16,34 +14,27 @@ public class ConfirmOrderCommandHandler
         _repository = repository;
     }
 
-    public async Task<bool> Handle(
-    ConfirmOrderCommand request,
-    CancellationToken cancellationToken)
+    public async Task<Result> Handle(
+        ConfirmOrderCommand request,
+        CancellationToken cancellationToken)
     {
         var order = await _repository.GetByIdAsync(
             request.OrderId,
             cancellationToken);
 
         if (order is null)
-            return false;
+            return Result.Failure(
+                OrderErrors.NotFound(request.OrderId));
+
+        if (order.Status != StatusType.Pending)
+            return Result.Failure(
+                OrderErrors.InvalidStatus);
 
         order.Confirm();
 
         await _repository.SaveChangesAsync(
             cancellationToken);
 
-        return true;
+        return Result.Success();
     }
-
-    public void Confirm()
-    {
-        if (Status != StatusType.Pending)
-        {
-            throw new InvalidOperationException(
-                "Only pending orders can be confirmed.");
-        }
-
-        Status = StatusType.Confirmed;
-    }
-    public StatusType Status { get; set; }
 }

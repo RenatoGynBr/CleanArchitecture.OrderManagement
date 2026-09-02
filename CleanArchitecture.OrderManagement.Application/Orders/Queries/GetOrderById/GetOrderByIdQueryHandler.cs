@@ -1,11 +1,12 @@
 ﻿using CleanArchitecture.OrderManagement.Application.Abstractions.Persistence;
+using CleanArchitecture.OrderManagement.Application.Common;
 using CleanArchitecture.OrderManagement.Application.DTOs;
 using MediatR;
 
 namespace CleanArchitecture.OrderManagement.Application.Orders.Queries.GetOrderById;
 
 public class GetOrderByIdQueryHandler
-    : IRequestHandler<GetOrderByIdQuery, OrderDto?>
+    : IRequestHandler<GetOrderByIdQuery, Result<OrderDto>>
 {
     private readonly IOrderRepository _repository;
 
@@ -15,7 +16,7 @@ public class GetOrderByIdQueryHandler
         _repository = repository;
     }
 
-    public async Task<OrderDto?> Handle(
+    public async Task<Result<OrderDto>> Handle(
         GetOrderByIdQuery request,
         CancellationToken cancellationToken)
     {
@@ -24,23 +25,27 @@ public class GetOrderByIdQueryHandler
             cancellationToken);
 
         if (order is null)
-            return null;
+        {
+            return Result<OrderDto>.Failure(OrderErrors.NotFound(request.Id));
+        }
 
         var items = order.OrderItems
-            .Select(x => new OrderItemDto(
-                x.Id,
-                x.ProductName,
-                x.Quantity,
-                x.UnitPrice,
-                x.Quantity * x.UnitPrice))
+            .Select(item => new OrderItemDto(
+                item.Id,
+                item.ProductName,
+                item.Quantity,
+                item.UnitPrice,
+                item.Quantity * item.UnitPrice))
             .ToList();
 
-        return new OrderDto(
+        var orderDto = new OrderDto(
             order.Id,
             order.CustomerId,
             order.Status,
             order.CreatedAt,
             items,
-            items.Sum(x => x.Total));
+            items.Sum(item => item.Total));
+
+        return Result<OrderDto>.Success(orderDto);
     }
 }

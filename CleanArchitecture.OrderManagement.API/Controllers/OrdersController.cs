@@ -1,4 +1,5 @@
-﻿using CleanArchitecture.OrderManagement.Application.Orders.Commands.ConfirmOrder;
+﻿using CleanArchitecture.OrderManagement.API.Extensions;
+//using CleanArchitecture.OrderManagement.Application.Orders.Commands.ConfirmOrder;
 using CleanArchitecture.OrderManagement.Application.Orders.Commands.CreateOrder;
 using CleanArchitecture.OrderManagement.Application.Orders.Queries.GetOrderById;
 using CleanArchitecture.OrderManagement.Application.Orders.Queries.GetOrders;
@@ -22,12 +23,11 @@ public class OrdersController : ControllerBase
     public async Task<IActionResult> GetAll(
         CancellationToken cancellationToken)
     {
-        var orders =
-            await _sender.Send(
-                new GetOrdersQuery(),
-                cancellationToken);
+        var result = await _sender.Send(
+            new GetOrdersQuery(),
+            cancellationToken);
 
-        return Ok(orders);
+        return Ok(result);
     }
 
     [HttpGet("{id:guid}")]
@@ -35,14 +35,11 @@ public class OrdersController : ControllerBase
         Guid id,
         CancellationToken cancellationToken)
     {
-        var order =
-            await _sender.Send(
-                new GetOrderByIdQuery(id),
-                cancellationToken);
+        var result = await _sender.Send(
+            new GetOrderByIdQuery(id),
+            cancellationToken);
 
-        return order is null
-            ? NotFound()
-            : Ok(order);
+        return result.ToActionResult(this);
     }
 
     [HttpPost]
@@ -50,14 +47,23 @@ public class OrdersController : ControllerBase
         CreateOrderCommand command,
         CancellationToken cancellationToken)
     {
-        var id = await _sender.Send(
+        var result = await _sender.Send(
             command,
             cancellationToken);
 
+        if (result.IsFailure)
+        {
+            return BadRequest(new
+            {
+                code = result.Error?.Code,
+                message = result.Error?.Message
+            });
+        }
+
         return CreatedAtAction(
             nameof(GetById),
-            new { id },
-            new { id });
+            new { id = result.Value },
+            new { id = result.Value });
     }
 
     [HttpPatch("{id:guid}/confirm")]
@@ -69,8 +75,6 @@ public class OrdersController : ControllerBase
             new ConfirmOrderCommand(id),
             cancellationToken);
 
-        return result
-            ? NoContent()
-            : NotFound();
+        return result.ToActionResult(this);
     }
 }

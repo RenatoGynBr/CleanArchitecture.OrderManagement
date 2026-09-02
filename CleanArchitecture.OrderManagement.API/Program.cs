@@ -1,5 +1,7 @@
 using CleanArchitecture.OrderManagement.Application;
+using CleanArchitecture.OrderManagement.Application.Validators;
 using CleanArchitecture.OrderManagement.Infrastructure;
+using FluentValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
@@ -31,6 +33,10 @@ builder.Services.AddInfrastructure(builder.Configuration);
 //builder.Services.AddOpenApi();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
+// Register validators in Program.cs
+//builder.Services.AddFluentValidationAutoValidation(); 
+builder.Services.AddValidatorsFromAssemblyContaining<OrderValidator>();
 
 var app = builder.Build();
 

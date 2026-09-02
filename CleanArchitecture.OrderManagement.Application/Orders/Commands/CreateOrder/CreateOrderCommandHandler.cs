@@ -1,12 +1,12 @@
 ﻿using CleanArchitecture.OrderManagement.Application.Abstractions.Persistence;
-using CleanArchitecture.OrderManagement.Domain.Enums;
+using CleanArchitecture.OrderManagement.Application.Common;
 using CleanArchitecture.OrderManagement.Domain.Models;
 using MediatR;
 
 namespace CleanArchitecture.OrderManagement.Application.Orders.Commands.CreateOrder;
 
 public class CreateOrderCommandHandler
-    : IRequestHandler<CreateOrderCommand, Guid>
+    : IRequestHandler<CreateOrderCommand, Result<Guid>>
 {
     private readonly IOrderRepository _orderRepository;
 
@@ -16,20 +16,33 @@ public class CreateOrderCommandHandler
         _orderRepository = orderRepository;
     }
 
-    public async Task<Guid> Handle(
+    public async Task<Result<Guid>> Handle(
         CreateOrderCommand request,
         CancellationToken cancellationToken)
     {
-        var orderId = Guid.NewGuid();
+        if (request.Items is null || request.Items.Count == 0)
+        {
+            return Result<Guid>.Failure(OrderErrors.InvalidStatus);
+        }
 
         var order = new Order(request.CustomerId);
 
         foreach (var item in request.Items)
         {
-            order.AddItem(
-                item.ProductName,
-                item.Quantity,
-                item.UnitPrice);
+            try
+            {
+                order.AddItem(
+                    item.ProductName,
+                    item.Quantity,
+                    item.UnitPrice);
+            }
+            catch (ArgumentException ex)
+            {
+                return Result<Guid>.Failure(
+                    new Error(
+                        "Order.InvalidItem",
+                        ex.Message));
+            }
         }
 
         await _orderRepository.AddAsync(
@@ -39,6 +52,6 @@ public class CreateOrderCommandHandler
         await _orderRepository.SaveChangesAsync(
             cancellationToken);
 
-        return order.Id;
+        return Result<Guid>.Success(order.Id);
     }
 }

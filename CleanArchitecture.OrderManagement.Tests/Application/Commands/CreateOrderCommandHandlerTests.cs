@@ -60,7 +60,7 @@ public class CreateOrderCommandHandlerTests
 
         // Assert
 
-        result.Should().NotBeEmpty();
+        result.Should().NotBeNull();
 
         capturedOrder.Should().NotBeNull();
 
