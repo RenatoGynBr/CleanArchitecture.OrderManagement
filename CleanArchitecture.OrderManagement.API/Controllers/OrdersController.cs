@@ -1,5 +1,4 @@
 ﻿using CleanArchitecture.OrderManagement.API.Extensions;
-//using CleanArchitecture.OrderManagement.Application.Orders.Commands.ConfirmOrder;
 using CleanArchitecture.OrderManagement.Application.Orders.Commands.CreateOrder;
 using CleanArchitecture.OrderManagement.Application.Orders.Queries.GetOrderById;
 using CleanArchitecture.OrderManagement.Application.Orders.Queries.GetOrders;

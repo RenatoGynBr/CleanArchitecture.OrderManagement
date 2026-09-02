@@ -13,7 +13,7 @@ public class Order
 
     public List<OrderItem> OrderItems { get; private set; } = new();
 
-    private Order()
+    public Order()
     {
     }
 

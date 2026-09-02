@@ -20,4 +20,8 @@ public static class OrderErrors
         new(
             "Order.InvalidStatus",
             "Only pending orders can be confirmed.");
+    public static readonly Error EmptyItems =
+        new(
+            "Order.EmptyItems",
+            "An order must contain at least one item.");
 }

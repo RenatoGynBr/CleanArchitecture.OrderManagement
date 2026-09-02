@@ -31,7 +31,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Application\Queries\" />
     <Folder Include="Domain\" />
     <Folder Include="Infrastructure\" />
     <Folder Include="API\" />

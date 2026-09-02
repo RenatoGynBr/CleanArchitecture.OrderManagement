@@ -22,7 +22,7 @@ public class CreateOrderCommandHandler
     {
         if (request.Items is null || request.Items.Count == 0)
         {
-            return Result<Guid>.Failure(OrderErrors.InvalidStatus);
+            return Result<Guid>.Failure(OrderErrors.EmptyItems);
         }
 
         var order = new Order(request.CustomerId);
