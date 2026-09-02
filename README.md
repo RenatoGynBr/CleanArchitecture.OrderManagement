@@ -24,3 +24,26 @@ When to consider Minimal APIs
 Notes
 - Store secrets (JWT keys, connection strings) in secure configuration (user-secrets, environment variables, or Azure Key Vault) for production.
 - This repository targets .NET 10 and uses C# 14 language features where applicable.
+
+## Quick Start: How to run the application
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/RenatoGynBr/CleanArchitecture.OrderManagement.git
+   cd CleanArchitecture.OrderManagement
+   ```
+
+2. Configure the database connection string in `appsettings.Development.json` or set it via environment variables. 
+3. Run EF Core migrations (if any) or let the app create the database:
+
+   ```bash
+   dotnet ef database update --project ./CleanArchitecture.OrderManagement.Infrastructure --startup-project ./CleanArchitecture.OrderManagement.Api
+   ```
+
+4. Run the API:
+
+   ```bash
+   cd CleanArchitecture.OrderManagement.Api
+   dotnet run
+   ```
