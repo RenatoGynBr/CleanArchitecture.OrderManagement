@@ -47,3 +47,46 @@ Notes
    cd CleanArchitecture.OrderManagement.Api
    dotnet run
    ```
+  
+## How to use docker
+
+Keep appsettings.json simple
+
+You can keep your local connection string:
+
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Data Source=orders.db"
+  }
+}
+
+When running locally: Data Source=orders.db
+
+When running Docker Compose, this environment variable:
+
+	ConnectionStrings__DefaultConnection: "Data Source=/app/data/orders.db"
+
+automatically overrides:
+
+	ConnectionStrings:DefaultConnection
+
+This is preferable to creating a Docker-specific connection string in code.
+
+Build it
+From the solution directory:
+
+	docker compose build
+
+Or simply:
+
+	docker compose up --build
+
+You should see something similar to:
+
+	ordermanagement-api
+
+running.
+
+Check:
+
+	docker compose ps

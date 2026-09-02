@@ -1,8 +1,10 @@
 using CleanArchitecture.OrderManagement.Application;
 using CleanArchitecture.OrderManagement.Application.Validators;
 using CleanArchitecture.OrderManagement.Infrastructure;
+using CleanArchitecture.OrderManagement.Infrastructure.Persistence;
 using FluentValidation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
@@ -46,6 +48,15 @@ if (app.Environment.IsDevelopment())
     //app.MapOpenApi();
     app.UseSwagger();
     app.UseSwaggerUI();
+}
+
+// Apply pending migrations
+using (var scope = app.Services.CreateScope())
+{
+    var dbContext =
+        scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+
+    await dbContext.Database.MigrateAsync();
 }
 
 app.UseHttpsRedirection();

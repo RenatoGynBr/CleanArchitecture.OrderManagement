@@ -1,4 +1,9 @@
 <Solution>
+  <Folder Name="/Solution Items/">
+    <File Path=".dockerignore" />
+    <File Path="docker-compose.yml" />
+    <File Path="Dockerfile" />
+  </Folder>
   <Project Path="CleanArchitecture.OrderManagement.API/CleanArchitecture.OrderManagement.API.csproj" />
   <Project Path="CleanArchitecture.OrderManagement.Application/CleanArchitecture.OrderManagement.Application.csproj" />
   <Project Path="CleanArchitecture.OrderManagement.Domain/CleanArchitecture.OrderManagement.Domain.csproj" />
